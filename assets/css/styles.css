@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #F7E4AA;
+    --secondary-color: #92b5aa;
+    --tertiary-color: #F0544F;
+    --gray: #596475;
+    --black: #1F2232;
+}
+
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+
+}
+
+.avatar {
+    width: 35vw;
+    box-shadow:  12px 12px 2px 1px rgba(146, 181, 170, .2);
+    border-radius: 20px;
+}
