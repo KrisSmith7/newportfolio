@@ -3,6 +3,7 @@
     <!--Title and Icon of page-->
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, maximum-scale=1">
         <link rel="page-icon" type="image" href="./assets/images/carriage logo.png"/>
         <link rel="stylesheet" href="./assets/css/styles.css"/>
         <title>Kris Smith</title>
@@ -10,6 +11,9 @@
 
     <body>
         <header>
+            <div>
+                <h1>Kris Smith</h1>
+            </div>
             <!--start of nav links-->
             <nav>
                 <ul>
@@ -23,37 +27,69 @@
         <!--hero-->
         <section class="hero">
             <div class="hero-name">
-                <h1>Kris Smith</h1>
-                <div class="hero-img">
-                    <img src="./assets/images/avatar.jpeg" class="avatar" />
-                </div>
-                <p><span class="tag">Front. Back. Top. Bottom. Round and Round.</span></p>
             </div>
-       
-            <!--about me section-->
+        </section>
+        
+        <!--Avatar-->
+        <section class="avatar">
+            <div class="avatar-img">
+                <img src="./assets/images/avatar.jpeg" alt = "illustration of Kris Smith" />
+            </div>
+            <p><span class="tag">Front. Back. Top. Bottom. Round and Round.</span></p>
+       </section>
+
+        <!--about me section-->
         <section id="about-me">
             <div class="about-me">
                 <h2>About me</h2>
+            </br>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni esse atque adipisci facilis iusto qui culpa magnam deleniti, nihil ullam vel dolorem consectetur nisi illo laboriosam voluptatum accusamus ab sint?</p>
             </div>
         </section>
 
         <!--portfolio section-->
         <section id="portfolio">
+            
             <div class="portfolio">
                 <h2>Portfolio</h2>
             </div>
-            <div class = "websitesScreenshots">
-                <a href="http://krissmith7.github.io/run-buddy"><img class = "website" src="./assets/images/app-1.png" alt="Screenshot of Run Buddy application"/></a>
-                <a href="http://krissmith7.github.io/horiseon"><img class = "website" src="./assets/images/app-2.png" alt="Screenshot of Horiseon application"></a>
-                <a href="http://triangledoulasofcolor.com/"><img class = "website" src="./assets/images/app-3.png" alt="Screenshot of Triangle Doulas of Color application"></a>
-            </div>
+        </br>           
+            <article class = "websites">
+               <div class="first-screenshot">
+                   <a href="http://krissmith7.github.io/run-buddy">
+                    <img class="first-screenshot" 
+                        src="./assets/images/app-1.png"
+                        alt="Screenshot of Run Buddy application"/></a>
+                </div>
+                
+                <div class="screenshot-label">
+                    <h3>Run Buddy</h3>
+                </div>
+
+                <!-- <div class="screenshots"> -->
+                    <a href="http://krissmith7.github.io/horiseon"><img src="./assets/images/app-2.png" alt="Screenshot of Horiseon application"></a>
+                <!-- </div> -->
+
+                <div class="screenshot-label">
+                    <h3>Horiseon</h3>
+                </div>
+
+                <!-- <div class="screenshots"> -->
+                    <a href="http://triangledoulasofcolor.com/"><img src="./assets/images/app-3.png" alt="Screenshot of Triangle Doulas of Color application"></a>
+                <!-- </div> -->
+
+                <div class="screenshot-label">
+                    <h3>Triangle Doulas of Color</h3>
+                </div>
+
+            </art>
         </section>
 
         <!--contact me section-->
         <section id="contact">
             <div class="contact">
                 <h2>Contact Me</h2>
+            </br>
             </div>
         </section>
 
