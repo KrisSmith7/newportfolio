@@ -24,3 +24,8 @@ header nav ul {
     box-shadow:  12px 12px 2px 1px rgba(146, 181, 170, .2);
     border-radius: 20px;
 }
+
+.website {
+    display: flex;
+    flex-wrap: wrap;
+}
