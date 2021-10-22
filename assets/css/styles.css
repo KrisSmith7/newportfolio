@@ -1,3 +1,4 @@
+/*universal selectors and variables*/
 :root {
     --primary-color: #c0d6df;
     --secondary-color: #166088;
@@ -17,28 +18,20 @@
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: block;
-    font-size: 20px;
     color: var(--secondary-color);
-    /* background-color: var(--primary-color) */
+}
+
+p {
+    margin-top: 50px;
+    line-height: 3vw;
+    font-size: 1.1vw;
 }
 
 section {
     padding: 50px;
 }
 
-.about-container div {
-   position: absolute;
-}
-
-.about-me{
-    width: 50%;
-    position: relative;
-    top: 50%;
-    float: right;
-    /* border-bottom: solid var(--accent-color2); */
-}
-
-
+/*header styling*/
 header {
     padding: 10px 25px;
     display: flex;
@@ -64,7 +57,7 @@ header nav ul {
 }
 
 .header-link {
-    border-right: solid 2px var(--accent-color);
+    border-right: solid 2px var(--primary-color);
 }
 
 header nav ul li a {
@@ -73,98 +66,139 @@ header nav ul li a {
     font-size: 30px;
     font-variant: small-caps;
     text-decoration: none;
-  }
+}
   
-  a:hover {
-      color: var(--accent-color);
-      background: var(--tertiary-color);
-      border-radius: 5px;
-    }
-    
-    h2 {
-        font-size: 3.5vw;
-    }
-    /* header nav ul li a :hover {
-    background: var(--primary-color);
-} */
+.link-styling a:hover {
+    color: var(--accent-color);
+    background: var(--tertiary-color);
+    border-radius: 5px;
+}
 
+/*end of header styling*/
 
-.websites {
+h2 {
+    font-size: 3.5vw;
+}
+
+/* about me styling*/
+.about-me {
+    /* background-color: var(--tertiary-color); */
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
 }
 
-.websites div {
-    width: 500px;
-    height: 500px;
+.about-container {
+    width: 50vw;
 }
 
-/* .first-app div {
-    width: 700px;
-} */
-
-/* .first-app img {
-    width: 700px;
-    height: 500px;
-    object-fit: cover;
-    overflow: hidden;
-} */
-
-.screenshots img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    object-position: 0% 0%;
-    padding-left: 25px;
-    /* overflow: hidden; */
-    border-radius: 5px;
+.about-container h2 {
+    display: inline;
 }
 
-.screenshots {
-    width: 50%;
-    max-height: 50%;
+.about-container p {
+    margin-top: 50px;
+    line-height: 3vw;
+    font-size: 1.1vw;
 }
 
-.websites h3 {
-    padding: 15px;
-    background-color: rgba(79, 109, 122, .9);
-    color: var(--tertiary-color);
-    border-radius: 5px;
-    border-style: groove;
-    position: relative;
-    bottom: 20%;
-    float: right;
-}
-
-.first-screenshot img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    object-position: 0% 0%;
-}
-
-
-.screenshot-label {
-    margin: 10px;
-}
-
-
-.avatar {
-    position:relative;
-    float: left;
-    line-height: 10vh;
-}
-
-.avatar-img img {
-    position: relative;
-    float: right;
+.avatar-container img {
     width: 35vw;
     box-shadow:  12px 12px 2px 1px rgba(89, 100, 117, .7);
     border-radius: 5px;
 }
 
-.title-border h2 {
+.tag {
+    text-align: center;
+    margin-top: 15px;
+    color:var(--accent-color);
+}
+
+/*portfolio section styling*/
+
+.portfolio {
+    background-color: var(--primary-color);
+}
+
+.portfolio h2 {
+    color: var(--secondary-color);
+}
+
+/* project images styling*/
+.websites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.websites div {
+    width: 300px;
+    height: 300px;
+
+}
+
+.first-app div {
+    border: none;
+    width: 350px;
+    height: 350px;
+}
+
+.first-app img {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    border: solid 3px var(--accent-color);
+    border-radius: 5px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.screenshots img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border: solid 3px var(--accent-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* project label styling */
+.websites h3 {
+    position: relative;
+    bottom: 100px;
+    padding: 10px;
+    background-color: rgba(79, 109, 122, .9);
+    color: var(--tertiary-color);
+    border-radius: 5px;
+    border-style: groove;
+    font-size: smaller;
+    max-width: fit-content
+}
+
+/* contact me section styling */
+.contact {
+    background-color: var(--accent-color);
+}
+.contact h2 {
+    color: var(--tertiary-color);
+}
+.contact-link {
+    text-decoration: none;
+    margin-top: 50px;
+    line-height: 3vw;
+    font-size: 1.1vw;
+}
+.title-border {
     border-bottom: solid 2px var(--tertiary-color);
+    padding-bottom: 10px;
+    width: 40%;
+}
+
+.title-border2 {
+    border-bottom: solid 2px var(--accent-color);
     padding-bottom: 10px;
     width: 40%;
 }
