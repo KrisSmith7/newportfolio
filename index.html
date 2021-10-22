@@ -17,80 +17,75 @@
             <!--start of nav links-->
             <nav>
                 <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li class="header-link"><a href="#about-me">About Me</a></li>
+                    <li class="header-link"><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!--hero-->
-        <section class="hero">
-            <div class="hero-name">
-            </div>
-        </section>
         
         <!--Avatar-->
         <section class="avatar">
             <div class="avatar-img">
                 <img src="./assets/images/avatar.jpeg" alt = "illustration of Kris Smith" />
+                <p>Front. Back. Top. Bottom. Round and Round.</p>
             </div>
-            <p><span class="tag">Front. Back. Top. Bottom. Round and Round.</span></p>
        </section>
 
+    <div class="main-column">
         <!--about me section-->
-        <section id="about-me">
-            <div class="about-me">
-                <h2>About me</h2>
+        <section id="about-me" class="about-me">
+            <div class="about-container title-border">
+                <h2>About Me</h2>
             </br>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni esse atque adipisci facilis iusto qui culpa magnam deleniti, nihil ullam vel dolorem consectetur nisi illo laboriosam voluptatum accusamus ab sint?</p>
             </div>
         </section>
 
         <!--portfolio section-->
-        <section id="portfolio">
+        <section id="portfolio" class="portfolio">
             
-            <div class="portfolio">
+            <div class="title-border">
                 <h2>Portfolio</h2>
             </div>
-        </br>           
+        </br>
+
             <article class = "websites">
-               <div class="first-screenshot">
-                   <a href="http://krissmith7.github.io/run-buddy">
-                    <img class="first-screenshot" 
-                        src="./assets/images/app-1.png"
-                        alt="Screenshot of Run Buddy application"/></a>
-                </div>
+               <div class="screenshots first-app">
+                   <a href="http://krissmith7.github.io/run-buddy"><img class="first-screenshot" src="./assets/images/app-1.png" alt="Screenshot of Run Buddy application"/></a>
+                            <!-- <div class="screenshot-label"> -->
+                                <h3>Run Buddy</h3>
+                            </div>
+                <!-- </div> -->
                 
-                <div class="screenshot-label">
-                    <h3>Run Buddy</h3>
-                </div>
-
-                <!-- <div class="screenshots"> -->
+                <div class="screenshots">
                     <a href="http://krissmith7.github.io/horiseon"><img src="./assets/images/app-2.png" alt="Screenshot of Horiseon application"></a>
+                    
+                                    <!-- <div class="screenshot-label"> -->
+                                        <h3>Horiseon</h3>
+                                    </div>
                 <!-- </div> -->
 
-                <div class="screenshot-label">
-                    <h3>Horiseon</h3>
-                </div>
-
-                <!-- <div class="screenshots"> -->
+                <div class="screenshots">
                     <a href="http://triangledoulasofcolor.com/"><img src="./assets/images/app-3.png" alt="Screenshot of Triangle Doulas of Color application"></a>
+                        <!-- <div class="screenshot-label"> -->
+                            <h3>Triangle Doulas of Color</h3>
+                        </div>
                 <!-- </div> -->
 
-                <div class="screenshot-label">
-                    <h3>Triangle Doulas of Color</h3>
-                </div>
 
-            </art>
+            </article>
         </section>
+    </div>
+
 
         <!--contact me section-->
         <section id="contact">
-            <div class="contact">
+            <div class="contact title-border">
                 <h2>Contact Me</h2>
-            </br>
             </div>
+            <a href="https://www.linkedin.com/in/kristiansmith220/">Linkedin</a>
         </section>
 
     </body>

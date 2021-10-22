@@ -2,10 +2,11 @@
     --primary-color: #c0d6df;
     --secondary-color: #166088;
     --tertiary-color: #dbe9ee;
-    --accent-color: #4f6d7a;
+    --accent-color: rgb(79, 109, 122);
     --accent-color2: #4a6fa5; 
     --gray: #596475;
     --black: #1F2232;
+    --label-background: (74, 111, 165, .82)
 }
 
 * {
@@ -17,89 +18,153 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: block;
     font-size: 20px;
-    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    /* background-color: var(--primary-color) */
 }
 
 section {
     padding: 50px;
 }
 
+.about-container div {
+   position: absolute;
+}
+
+.about-me{
+    width: 50%;
+    position: relative;
+    top: 50%;
+    float: right;
+    /* border-bottom: solid var(--accent-color2); */
+}
+
+
 header {
-    padding: 20px 35px;
+    padding: 10px 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary-color);
 }
 
 header h1 {
-    color: var(--tertiary-color);
-    font-size: 50px;
+    color: var(--primary-color);
+    font-size: 5vw;
+    padding: 25px;
+    letter-spacing: 20px;
+    font-variant:small-caps;
+    align-items: center;
 }
 
 header nav ul {
     display: flex;
-    justify-content: space-between;
-    color: var(--tertiary-color);
-    list-style: none;
+    /* list-style: none; */
     margin: 25px 10px;
 }
 
-/* header nav ul li a :hover {
+.header-link {
+    border-right: solid 2px var(--accent-color);
+}
+
+header nav ul li a {
+    padding: 25px;
+    color: var(--primary-color);
+    font-size: 30px;
+    font-variant: small-caps;
+    text-decoration: none;
+  }
+  
+  a:hover {
+      color: var(--accent-color);
+      background: var(--tertiary-color);
+      border-radius: 5px;
+    }
+    
+    h2 {
+        font-size: 3.5vw;
+    }
+    /* header nav ul li a :hover {
     background: var(--primary-color);
 } */
 
+
 .websites {
     display: flex;
-}
-.websites img{
-    display: flex;
     flex-wrap: wrap;
-    max-width: 20vw;
-    max-height: 20vw;
-    /* justify-content:space-around; */
 }
-.websites h3 {
-    font-size: 15px;
-    padding: 15px;
-    display: flex;
-    background-color: rgba(79, 109, 122, .7);
-    color: var(--primary-color);
+
+.websites div {
+    width: 500px;
+    height: 500px;
+}
+
+/* .first-app div {
+    width: 700px;
+} */
+
+/* .first-app img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+} */
+
+.screenshots img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    padding-left: 25px;
+    /* overflow: hidden; */
     border-radius: 5px;
+}
+
+.screenshots {
+    width: 50%;
+    max-height: 50%;
+}
+
+.websites h3 {
+    padding: 15px;
+    background-color: rgba(79, 109, 122, .9);
+    color: var(--tertiary-color);
+    border-radius: 5px;
+    border-style: groove;
+    position: relative;
+    bottom: 20%;
+    float: right;
 }
 
 .first-screenshot img {
-    max-width: 25vw;
-    max-height: 25vw;
-    display: flex;
-    border-radius: 5px;
-    /* position: relative; */
-    justify-content: start;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0% 0%;
 }
 
-.screenshots img {
-    max-width: 25vw;
-    max-height: 10vw;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-end;
-}
 
 .screenshot-label {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
     margin: 10px;
 }
 
-.screenshot-label h3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+.avatar {
+    position:relative;
+    float: left;
+    line-height: 10vh;
 }
 
 .avatar-img img {
+    position: relative;
+    float: right;
     width: 35vw;
-    box-shadow:  12px 12px 2px 1px rgba(192, 214, 223, .7);
+    box-shadow:  12px 12px 2px 1px rgba(89, 100, 117, .7);
     border-radius: 5px;
+}
+
+.title-border h2 {
+    border-bottom: solid 2px var(--tertiary-color);
+    padding-bottom: 10px;
+    width: 40%;
 }
