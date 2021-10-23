@@ -303,6 +303,10 @@ h2 {
        align-items: center;
        margin-bottom: 25px;
     }
+
+    .tag {
+        margin-top: 50px;
+    }
     
     .about-me h2 {
         display: block;
@@ -344,22 +348,20 @@ h2 {
         position: static;
     }
 
-    header nav ul {
-       font-size: 10px;
-       margin: 0;
-       padding: 0;
-    }
-
     .about-me {
         flex-direction: column;
         align-items: center;
-        flex: 0 0 auto;
+        flex: 0 0 50%;
     }
 
+    .avatar-container img {
+        width: 100%;
+    }
     .about-me h2 {
         display: block;
         text-align: center;
     }
+
     .about-container {
         width: 100%;
     }
@@ -371,7 +373,8 @@ h2 {
 
     .tag {
         font-size: 14px;
-        flex: 0 0 auto;
+        flex: 100%;
+        margin-top: 50px;
     }
 
       p {
@@ -382,7 +385,7 @@ h2 {
     .container {
         display: flex;
         max-width: 575px;
-        align-items: flex-start;
+        align-items: center;
         padding: 0;
 
     }
