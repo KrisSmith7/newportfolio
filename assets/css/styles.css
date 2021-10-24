@@ -205,8 +205,10 @@ h2 {
 }
 
 .link-container {
-    min-width: 300px ;
+    min-width: 300px;
+    min-height: 300px;
 }
+
 /* contact me section styling */
 .contact {
     background-color: var(--accent-color);

@@ -1,7 +1,9 @@
 # newportfolio
 
 ##Kris Smith - Portfolio
-This is a portfolio displaying some of the work I've done. Below is the acceptance criteria for the assignment.
+This is a portfolio displaying some of the work I've done. Below is the screenshot and acceptance criteria for the assignment.
+
+![Screenshot of portfolio](./portfolio-screenshot.png)
 
 ##User Story
 ```
