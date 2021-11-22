@@ -194,6 +194,14 @@ h2 {
     margin: 10px;
 }
 
+.crypto {
+    background-image: url(../images/CryptoQuotes.gif);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
 /* project label styling */
 .container h3 {
     padding: 15px 10px;
