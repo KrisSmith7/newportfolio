@@ -7,10 +7,36 @@
     --accent-color2: #4a6fa5; 
     --gray: #596475;
     --black: #1F2232;
-    --label-background: (74, 111, 165, .82)
+    --label-background: (74, 111, 165, .82);
+    --orange: #db5461;
+    --dark-green: #4f6d7a;
+    --light-green: #c0d6df;
+    --pale-green: #dbe9ee;
+    --rust: #663f46;
 }
 
-* {
+.gradient {
+    background: linear-gradient(60deg, #4f6d7a 0%, #c0d6df 100%);
+  }
+  .gradient2 {
+    background: linear-gradient(145deg, #2f455b 0%, #1f2544 100%);
+  }
+
+.bg-accent {
+    background-color: var(--rust);
+}
+.bg-primary {
+    background-color: var(--dark-green);
+}
+.drop-shadow {
+    filter: drop-shadow(15px 15px 10px black)
+    }
+    
+.green-border {
+    border: var(--dark-green), solid, 2px
+}
+
+/* * {
     padding: 0px;
     margin: 0px;
 }
@@ -29,10 +55,10 @@ p {
 
 section {
     padding: 50px;
-}
+} */
 
 /*header styling*/
-header {
+/* header {
     padding: 0px 25px;
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +82,11 @@ header h1 {
 
 header nav ul {
     display: flex;
-    /* list-style: none; */
+    list-style: none;
     margin: 25px 10px;
-}
+} */
 
-.header-link {
+/* .header-link {
     border-right: solid 2px var(--primary-color);
 }
 
@@ -76,17 +102,17 @@ header nav ul li a {
     color: var(--accent-color);
     background: var(--tertiary-color);
     border-radius: 5px;
-}
+} */
 
 /*end of header styling*/
 
-h2 {
+/* h2 {
     font-size: 30px;
-}
+} */
 
 /* about me styling*/
-.about-me {
-    /* background-color: var(--tertiary-color); */
+/* .about-me {
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,9 +138,9 @@ h2 {
     width: 35vw;
     box-shadow:  12px 12px 2px 1px rgba(89, 100, 117, .7);
     border-radius: 5px;
-}
+} */
 
-.tag {
+/* .tag {
     font-size: 15px;
     text-align: center;
     margin-top: 15px;
@@ -123,11 +149,11 @@ h2 {
     padding: 15px 5px;
     border-radius: 5px;
     font-weight: bold;
-}
+} */
 
 /*portfolio section styling*/
 
-.portfolio {
+/* .portfolio {
     background-color: var(--primary-color);
     min-height: fit-content;
 }
@@ -143,10 +169,10 @@ h2 {
     justify-content: center;
     margin: 50px 25px;
     min-width: 700px;
-}
+} */
 
 /* project images styling*/
-.content-overlay {
+/* .content-overlay {
     display: flex;
     text-decoration: none;
     align-items: flex-end;
@@ -169,43 +195,42 @@ h2 {
     display: flex;
     min-height: fit-content;
 
-}
+} */
+
+.work-image {
+background-size: cover;
+width: 500px;
+height: 500px;}
 
 .first-app {
     background-image: url(../images/app-1.png);
-    background-size: cover;
-    width: 650px;
-    height: 300px;
 }
 
 .horiseon {
     background-image: url(../images/app-2.png);
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
 }
 
 .doulas {
     background-image: url(../images/app-3.png);
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
 }
 
+.crypto {
+    background-image: url(../images/CryptoQuotes.gif)
+}
+
+
 /* project label styling */
-.container h3 {
+/* .container h3 {
     padding: 15px 10px;
     background-color:var(--accent-color2);
     color: var(--tertiary-color);
     border-radius: 5px;
     border-style: groove;
     min-block-size: fit-content;
-}
+} */
 
 /* contact me section styling */
-.contact {
+/* .contact {
     background-color: var(--accent-color);
 }
 
@@ -237,11 +262,11 @@ h2 {
     margin: 0;
     padding: 15px 15px;
     display: inline-block;
-}
+} */
 
 /*media queries for responsive design*/
 
-@media screen and (max-width:980px) {
+/* @media screen and (max-width:980px) {
     header {
         flex-wrap: wrap;
         padding: 0;
@@ -391,4 +416,4 @@ h2 {
         flex: 0 0 auto;
         text-align: center;
     }
-}
+} */
