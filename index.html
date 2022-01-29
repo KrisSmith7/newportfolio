@@ -8,21 +8,23 @@
     <meta name="viewport" content="width-device-width, initial-scale=1" />
     <link rel="page-icon" type="image" src="./assets/images/carriage logo.png" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway&display=swap">
     <title>Kris Smith</title>
 </head>
 
-<body>
+<body style="font-family:'Raleway';" class="sans-serif; text-green-500 md:text-2xl">
     <!--start of Header with page navigation-->
-    <header>
+    <header class="flex flex-wrap justify-center md:justify-between md:px-10 py-10 gradient2">
         <div>
-            <h1>Kris Smith</h1>
+            <h1 class="text-center text-4xl pb-4 md:text-6xl font-bold tracking-widest">Kris Smith</h1>
         </div>
         <!--start of nav links-->
-        <nav>
-            <ul>
-                <li class="link-styling header-link"><a href="#about-me">About Me</a></li>
-                <li class="link-styling header-link"><a href="#portfolio">Portfolio</a></li>
-                <li class="link-styling"><a href="#contact">Contact</a></li>
+        <nav class="flex">
+            <ul class="flex items-center">
+                <li class="px-4 text-lg md:font-bold link-styling header-link"><a href="#about-me">About Me</a></li>
+                <li class="px-4 text-lg md:font-bold link-styling header-link"><a href="#portfolio">Portfolio</a></li>
+                <li class="px-4 text-lg md:font-bold link-styling"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -30,17 +32,17 @@
 
 
     <!--About Me Section-->
-    <section id="about-me" class="about-me">
-        <div class="avatar-container">
+    <section id="about-me" class="py-10 md:flex md:justify-between items-center about-me">
+        <div class="avatar-container drop-shadow w-full border-2 border-green-500 p-2 md:p-6 md:m-6 rounded-xl md:w-2/5">
             <img src="./assets/images/avatar.jpeg" alt="illustration of Kris Smith" />
-            <p class="tag">Sleep. Eat. Code. Repeat.</p>
+            <p class="bg-yellow-100 text-lg md:text-2xl p-8 text-center font-bold tag">Sleep. Eat. Code. Repeat.</p>
         </div>
         <!--about me text content-->
-        <div class="about-container">
+        <div class="about-container py-10 text-center w-full md:px-10 md:w-1/2 md:text-right">
             <!-- <div class="about-container title-border"> -->
-            <h2 class="title-border2">About Me</h2>
+            <h2 class="font-bold lg:text-6xl">About Me</h2>
             </br>
-            <p>Howdy. New to web development and design, but always eager to jump in. I love the logic behind it and
+            <p class="leading-10 text-lg px-4 md:p-0">Howdy. New to web development and design, but always eager to jump in. I love the logic behind it and
                 have always been so fascinated by the amazing things we can create. When I'm not working or practicing
                 web dev, you can usually find me with my family, watching a game, or hunting down a good trivia spot.
             </p>
@@ -49,43 +51,54 @@
     <!--end of About Me Section-->
 
     <!--portfolio section-->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="text-center px-4 gradient">
 
-        <div class="title-border2">
-            <h2>Portfolio</h2>
+        <div>
+            <h2 class="font-bold Lg:text-6xl py-10">Portfolio</h2>
         </div>
 
-        <div class="container">
+        <div class="container flex flex-col md:inline-grid grid-cols-2 md:gap-x-40 md:gap-y-20">
             <!--first project (larger image)-->
 
-            <div class="first-app content-overlay">
+            <div class="drop-shadow mb-20 w-full h-2/3 border-2 p-2 md:p-6 rounded-xl md:w-full">
+                <img class="h-full w-full" src="./assets/images/app-1.png" />
                 <a href="http://krissmith7.github.io/run-buddy">
-                    <div class="link-container">
-                        <h3>Run Buddy</h3>
+                    <div class="link-container w-3/4 absolute bottom-10 right-2 p-4 rounded-xl gradient2">
+                        <h3 class="font-bold">Run Buddy</h3>
                     </div>
                 </a>
             </div>
 
-            <div class="crypto content-overlay">
+            <div class="drop-shadow mb-20 w-full h-2/3 border-2 p-2 md:p-6 rounded-xl md:w-full">
+                <img class="w-full h-full" src="./assets/images/CryptoQuotes.gif" />
                 <a href="http://krissmith7.github.io/cryptoquotes">
-                    <div class="link-container">
-                        <h3>CryptoQuotes</h3>
+                    <div class="link-container w-2/3 absolute bottom-10 right-2 p-4 rounded-xl gradient2">
+                        <h3 class="font-bold">CryptoQuotes</h3>
                     </div>
                 </a>
             </div>
-
-            <div class="horiseon content-overlay">
+            <div class="drop-shadow mb-20 w-full h-2/3 border-2 p-2 md:p-6 rounded-xl md:w-full">
+                <img class="w-full h-full" src="./assets/images/mediagems-screenshot.png" />
+                <a href="https://gentle-dusk-15958.herokuapp.com/">
+                    <div class="link-container w-2/3 absolute bottom-10 right-2 p-4 rounded-xl gradient2">
+                        <h3 class="font-bold">Media Gems</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="drop-shadow mb-20 w-full h-2/3 border-2 p-2 md:p-6 rounded-xl md:w-full">
+                <img class="h-full w-full" src="./assets/images/app-2.png"/>
                 <a href="http://krissmith7.github.io/horiseon">
-                    <div class="link-container">
-                        <h3>Horiseon</h3>
+                    <div class="link-container w-2/3 absolute bottom-10 right-2 p-4 rounded-xl gradient2">
+                        <h3 class="font-bold">Horiseon</h3>
                     </div>
                 </a>
             </div>
 
-            <div class="doulas content-overlay">
+            <div class="drop-shadow mb-20 w-full h-2/3 border-2 p-2 md:p-6 rounded-xl md:w-full">
+                <img class="h-full w-full" src="./assets/images/app-3.png"/>
                 <a href="http://triangledoulasofcolor.com/">
-                    <div class="link-container">
-                        <h3>Triangle Doulas of Color</h3>
+                    <div class="link-container w-2/3 absolute bottom-10 right-2 p-4 rounded-xl gradient2">
+                        <h3 class="font-bold">Triangle Doulas of Color</h3>
                     </div>
                 </a>
             </div>
@@ -94,9 +107,9 @@
 
 
     <!--contact me section-->
-    <section id="contact" class="contact">
+    <section id="contact" class="py-10 bg-accent">
         <div class="title-border">
-            <h2>Contact Me</h2>
+            <h2 class="font-bold text-6xl py-10">Contact Me</h2>
         </div>
         <div class="link-styling contact-link">
             <a href="https://www.linkedin.com/in/kristiansmith220/">Connect with me on Linkedin</a>
